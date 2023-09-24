@@ -1,0 +1,25 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- https://github.com/poly-glot/personal-cloud//deployment/base/?ref=main
+
+namespace: pakistan-2003
+namePrefix: main-
+
+patches:
+- path: deployment.yaml
+- path: ingress.yaml
+- target:
+    kind: Deployment
+    name: webapp
+  patch: |-
+    - op: remove
+      path: /spec/template/spec/containers/0/env/0
+    - op: remove
+      path: /spec/template/spec/containers/0/envFrom/0
+
+images:
+- name: webapp:latest
+  newName: lhr.ocir.io/lrhvckxzwf3l/pakistan-2003
+  newTag: e9c0421d263f2d08020572d1d0fa60174a0e08f1

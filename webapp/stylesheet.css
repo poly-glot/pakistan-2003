@@ -1,0 +1,30 @@
+.navlink 				                { padding-left: 10px; padding-right: 10px; }
+.navlink a 			                    { font-family:arial, sans-serif; font-size: 12px; text-decoration: none; font-weight: bold }
+.navlink a:link		                    { color:#ffffff}
+.navlink a:visited	                    { color: #ffffff}
+.navlink a:hover		                { color: #ffffff}
+.navlink a:active		                { text-decoration: underline; color: #ffffff}
+
+.text 				                    { font-family:tahoma,sans-serif; font-size: 12px; color:#8e8e8e; }
+.text b 				                { color:#000000; }
+.packages b 				            { color:#ffffff; }
+
+a:link                                  { color:#160762; }
+a:visited                               { color: #160762; }
+a:hover                                 { color: #160762; }
+a:active                                { color: #160762; }
+
+.submenu                                { font-family: Arial; margin-bottom: 30px; }
+.submenuheading                         { text-transform: uppercase; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid #99CD02; }
+.submenulinks                           { list-style: none; margin: 0; padding: 0; }
+.submenulinks li                        { margin-bottom: 2px; }
+.submenulinks li a                      { text-decoration: none; }
+
+.thumb                                  { margin-right: 10px; margin-bottom: 10px; }
+
+.chart tbody .even td                   { background: #F0F0F0; }
+
+.timediff                               { font-family: Arial, Helvetica; font-size: 14px; }
+
+
+.tours .submenulinks li                 { margin-bottom: 5px; padding-bottom: 5px; border-bottom: 1px solid #f3f3f3; }
