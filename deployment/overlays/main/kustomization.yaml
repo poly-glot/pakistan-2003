@@ -22,4 +22,4 @@ patches:
 images:
 - name: webapp:latest
   newName: lhr.ocir.io/lrhvckxzwf3l/pakistan-2003
-  newTag: 1b4b88281c5ea75685ee6e1b197d14cb20839863
+  newTag: f3cb81aeacd157e4370f3a1203c4e0b9f49f8b85
