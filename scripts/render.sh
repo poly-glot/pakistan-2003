@@ -33,6 +33,6 @@ done < <(
 
 # Strip .php from internal hrefs so cleanUrls can serve the static .html files.
 # Runs against rendered HTML only; leaves PHP source untouched.
-find "$OUT" -type f -name '*.html' -print0 | xargs -0 sed -i '' -E 's/(href="[^"]*)\.php"/\1"/g'
+find "$OUT" -type f -name '*.html' -print0 | xargs -0 perl -i -pe 's/(href="[^"]*)\.php"/$1"/g'
 
 echo "Done. Output: $OUT"
