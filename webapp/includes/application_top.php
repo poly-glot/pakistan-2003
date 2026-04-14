@@ -6,7 +6,7 @@
     <title>Pakistan Travel Web - Destinations</title>
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords here">
-    <base href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/">
+    <base href="/">
 
     <link rel="stylesheet" type="text/css" href="/stylesheet.css">
 </head>

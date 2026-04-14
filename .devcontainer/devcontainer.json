@@ -1,0 +1,20 @@
+{
+  "name": "pakistan-2003",
+  "image": "mcr.microsoft.com/devcontainers/php:1-8.3",
+  "forwardPorts": [8080, 5000],
+  "postCreateCommand": "chmod +x scripts/render.sh",
+  "postAttachCommand": {
+    "server": "php -S 0.0.0.0:8080 -t webapp"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "toba.vsfire"
+      ]
+    }
+  }
+}
